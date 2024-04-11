@@ -1,4 +1,4 @@
-package epicode.u5d8hw.exceptions;
+package gioelefriggiau5d8hw.exceptions;
 
 public class NotFoundException extends RuntimeException {
     public NotFoundException(String message) {

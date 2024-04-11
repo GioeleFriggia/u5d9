@@ -1,11 +1,10 @@
-package epicode.u5d8hw.services;
+package gioelefriggiau5d8hw.services;
 
-import epicode.u5d8hw.entities.Author;
-import epicode.u5d8hw.entities.Blogpost;
-import epicode.u5d8hw.exceptions.NotFoundException;
-import epicode.u5d8hw.payloads.NewBlogPostPayload;
-import epicode.u5d8hw.repositories.AuthorsRepository;
-import epicode.u5d8hw.repositories.BlogsRepository;
+import gioelefriggiau5d8hw.entities.Author;
+import gioelefriggiau5d8hw.entities.Blogpost;
+import gioelefriggiau5d8hw.exceptions.NotFoundException;
+import gioelefriggiau5d8hw.payloads.NewBlogPostPayload;
+import gioelefriggiau5d8hw.repositories.BlogsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

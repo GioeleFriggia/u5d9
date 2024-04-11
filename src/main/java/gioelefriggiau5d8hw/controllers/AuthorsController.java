@@ -1,7 +1,7 @@
-package epicode.u5d8hw.controllers;
+package gioelefriggiau5d8hw.controllers;
 
-import epicode.u5d8hw.entities.Author;
-import epicode.u5d8hw.services.AuthorsService;
+import gioelefriggiau5d8hw.entities.Author;
+import gioelefriggiau5d8hw.services.AuthorsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

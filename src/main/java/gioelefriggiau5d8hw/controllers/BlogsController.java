@@ -1,13 +1,13 @@
-package epicode.u5d8hw.controllers;
+package gioelefriggiau5d8hw.controllers;
 
-import epicode.u5d8hw.entities.Blogpost;
-import epicode.u5d8hw.exceptions.NotFoundException;
-import epicode.u5d8hw.payloads.NewBlogPostPayload;
-import epicode.u5d8hw.services.BlogsService;
+import gioelefriggiau5d8hw.entities.Blogpost;
+import gioelefriggiau5d8hw.payloads.NewBlogPostPayload;
+import gioelefriggiau5d8hw.services.BlogsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.multipart.MultipartFile;
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -15,11 +15,18 @@ import java.util.List;
 public class BlogsController {
     @Autowired
     BlogsService blogsService;
+    @Autowired
+    CloudinaryService cloudinaryService;
 
     // 1. - POST http://localhost:3001/blogs (+ req.body)
     @PostMapping("")
     @ResponseStatus(HttpStatus.CREATED) // <-- 201
-    public Blogpost saveBlog(@RequestBody NewBlogPostPayload body) {
+    public Blogpost saveBlog(@RequestParam(value = "file", required = false) MultipartFile file,
+                             @ModelAttribute NewBlogPostPayload body) throws IOException {
+        if (file != null && !file.isEmpty()) {
+            String imageUrl = cloudinaryService.upload(file);
+            body.setCover(imageUrl);
+        }
         return blogsService.save(body);
     }
 

@@ -1,6 +1,6 @@
-package epicode.u5d8hw.repositories;
+package gioelefriggiau5d8hw.repositories;
 
-import epicode.u5d8hw.entities.Author;
+import gioelefriggiau5d8hw.entities.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

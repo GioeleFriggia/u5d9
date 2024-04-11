@@ -1,9 +1,9 @@
-package epicode.u5d8hw.services;
+package gioelefriggiau5d8hw.services;
 
-import epicode.u5d8hw.entities.Author;
-import epicode.u5d8hw.exceptions.BadRequestException;
-import epicode.u5d8hw.exceptions.NotFoundException;
-import epicode.u5d8hw.repositories.AuthorsRepository;
+import gioelefriggiau5d8hw.entities.Author;
+import gioelefriggiau5d8hw.exceptions.BadRequestException;
+import gioelefriggiau5d8hw.exceptions.NotFoundException;
+import gioelefriggiau5d8hw.repositories.AuthorsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

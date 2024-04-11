@@ -1,7 +1,6 @@
-package epicode.u5d8hw.exceptions;
+package gioelefriggiau5d8hw.exceptions;
 
 import java.time.LocalDateTime;
-import java.util.Date;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;

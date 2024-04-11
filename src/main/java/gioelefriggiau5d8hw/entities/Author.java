@@ -1,4 +1,4 @@
-package epicode.u5d8hw.entities;
+package gioelefriggiau5d8hw.entities;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
